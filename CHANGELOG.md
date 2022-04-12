@@ -1,5 +1,8 @@
 # Changelog
-All changes to the Kameleoon Client Server-Side SDK for Node.js will be documented in this file.
+All notable changes to this project will be documented in this file.
+
+## 2.1.6 - 2022-04-12
+* Fixed an issue where the experiment configuration and feature flags were not updated after the refresh interval had elapsed.
 
 ## 2.1.5 - 2022-04-12
 * Added method for retrieving data from remote source: [`RetrieveDataFromRemoteSource`](https://developers.kameleoon.com/csharp-sdk.html#retrievedatafromremotesource)
