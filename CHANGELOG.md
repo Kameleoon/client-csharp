@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 2.1.7 - 2022-04-25
+* Added method to obtain a list of feature flags: [`ObtainFeatureList`](https://developers.kameleoon.com/csharp-sdk.html#obtainfeaturelist)
+* Added method to obtain a list of feature flags targeted for specified visitor code: [`ObtainFeatureListForVisitorCode`](https://developers.kameleoon.com/csharp-sdk.html#obtainfeaturelistforvisitorcode)
+* Added method to obtain a list of experiments: [`ObtainExperimentList`](https://developers.kameleoon.com/csharp-sdk.html#obtainexperimentlist)
+* Added method to obtain a list of experiments targeted for specified visitor code: [`ObtainExperimentListForVisitorCode`](https://developers.kameleoon.com/csharp-sdk.html#obtainexperimentlistforvisitorcode)
+* Added method to obtain all variables for feature flag: [`ObtainFeatureAllVariables`](https://developers.kameleoon.com/csharp-sdk.html#obtainfeatureallvariables)
+* Added an indication of feature flag (Id, Key) when exception happens. Related to [`ActivateFeature`](https://developers.kameleoon.com/csharp-sdk.html#activatefeature), [`obtainFeatureVariable`](https://developers.kameleoon.com/csharp-sdk.html#obtainfeaturevariable)
+* Added an indication of experiment (Id) when exception happens. Related to [`TriggerExperiment`](https://developers.kameleoon.com/csharp-sdk.html#triggerexperiment)
+
 ## 2.1.6 - 2022-04-12
 * Fixed an issue where the experiment configuration and feature flags were not updated after the refresh interval had elapsed.
 
