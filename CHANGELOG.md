@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 2.1.8 - 2022-04-28
+* Fixed issue where SDK could lose configuration and return exceptions (**Configuration Not Found**) for methods: [`ActivateFeature`](https://developers.kameleoon.com/csharp-sdk.html#activatefeature) and [`TriggerExperiment`](https://developers.kameleoon.com/csharp-sdk.html#triggerexperiment)
+* Added [`default_timeout`](https://developers.kameleoon.com/csharp-sdk.html#additional-configuration) option to configuration file. It takes a value in milliseconds.
+
 ## 2.1.7 - 2022-04-25
 * Added method to obtain a list of feature flags: [`ObtainFeatureList`](https://developers.kameleoon.com/csharp-sdk.html#obtainfeaturelist)
 * Added method to obtain a list of feature flags targeted for specified visitor code: [`ObtainFeatureListForVisitorCode`](https://developers.kameleoon.com/csharp-sdk.html#obtainfeaturelistforvisitorcode)
