@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 2.2.0 - 2022-11-08
+* Significantly improved configuration load time
+* Added support for **Experiment** & **Exclusive Campaign** conditions. Related to [`triggerExperiment`](https://developers.kameleoon.com/csharp-sdk.html#triggerexperiment)
+* Fixed an issue when an user which was already registered with a variation gets new randomly selected variation. Related to [`triggerExperiment`](https://developers.kameleoon.com/csharp-sdk.html#triggerexperiment)
+* Added KameleoonData [`Device`](https://developers.kameleoon.com/csharp-sdk.html#device) data. Possible values are: **PHONE**, **TABLET**, **DESKTOP**. 
+* Removed KameleoonData `Interest`
+* Added support of `is among the values` operator for Custom Data
+
 ## 2.1.9 - 2022-07-27
 * Fixed naming: `ObtainFeatureAllVariable` -> `ObtainFeatureAllVariables`
 * Minor bug fixes
