@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 2.2.1 - 2022-11-17
+* Added possibility to set [`UserAgent`](https://developers.kameleoon.com/csharp-sdk.html#useragent).
+* Minor bug improvements
+
 ## 2.2.0 - 2022-11-08
 * Significantly improved configuration load time
 * Added support for **Experiment** & **Exclusive Campaign** conditions. Related to [`triggerExperiment`](https://developers.kameleoon.com/csharp-sdk.html#triggerexperiment)
