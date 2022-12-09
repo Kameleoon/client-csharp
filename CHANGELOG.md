@@ -1,6 +1,25 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 3.0.0 - 2022-12-09
+* Added support of new feature flag rules:
+    - [`GetFeatureVariationKey`](https://developers.kameleoon.com/csharp-sdk.html#GetFeatureVariationKey)
+    - [`GetFeatureVariable`](https://developers.kameleoon.com/csharp-sdk.html#GetFeatureVariable)
+* These methods returns **int** instead of **Int64** if variable has number type:
+    - [`ObtainFeatureVariable`](https://developers.kameleoon.com/csharp-sdk.html#ObtainFeatureVariable)
+    - [`GetFeatureAllVariables`](https://developers.kameleoon.com/csharp-sdk.html#GetFeatureAllVariables)
+* These methods are synchronized now:
+    - [`TriggerExperiment`](https://developers.kameleoon.com/csharp-sdk.html#triggerexperiment)
+    - [`ActivateFeature`](https://developers.kameleoon.com/csharp-sdk.html#activatefeature)
+* Renaming of methods (old methods marked as deprecated and will be removed later)
+    - `ObtainVisitorCode` -> [`GetVisitorCode`](https://developers.kameleoon.com/csharp-sdk.html#GetVisitorCode)
+    - `ObtainVariationAssociatedData` -> [`GetVariationAssociatedData`](https://developers.kameleoon.com/csharp-sdk.html#GetVariationAssociatedData),
+    - `ObtainFeatureAllVariables` -> [`GetFeatureAllVariables`](https://developers.kameleoon.com/csharp-sdk.html#GetFeatureAllVariables),
+    - `ObtainExperimentList` -> [`GetExperimentList`](https://developers.kameleoon.com/csharp-sdk.html#GetExperimentList),
+    - `ObtainExperimentListForVisitorCode` -> [`GetExperimentListForVisitorCode`](https://developers.kameleoon.com/csharp-sdk.html#GetExperimentListForVisitorCode)
+    - `ObtainFeatureList` -> [`GetFeatureList`](https://developers.kameleoon.com/csharp-sdk.html#GetFeatureList),
+    - `ObtainFeatureListForVisitorCode` -> [`GetFeatureListForVisitorCode`](https://developers.kameleoon.com/csharp-sdk.html#GetFeatureListForVisitorCode)
+
 ## 2.2.1 - 2022-11-17
 * Added possibility to set [`UserAgent`](https://developers.kameleoon.com/csharp-sdk.html#useragent).
 * Minor bug improvements
@@ -9,7 +28,7 @@ All notable changes to this project will be documented in this file.
 * Significantly improved configuration load time
 * Added support for **Experiment** & **Exclusive Campaign** conditions. Related to [`triggerExperiment`](https://developers.kameleoon.com/csharp-sdk.html#triggerexperiment)
 * Fixed an issue when an user which was already registered with a variation gets new randomly selected variation. Related to [`triggerExperiment`](https://developers.kameleoon.com/csharp-sdk.html#triggerexperiment)
-* Added KameleoonData [`Device`](https://developers.kameleoon.com/csharp-sdk.html#device) data. Possible values are: **PHONE**, **TABLET**, **DESKTOP**. 
+* Added KameleoonData [`Device`](https://developers.kameleoon.com/csharp-sdk.html#device) data. Possible values are: **PHONE**, **TABLET**, **DESKTOP**.
 * Removed KameleoonData `Interest`
 * Added support of `is among the values` operator for Custom Data
 
