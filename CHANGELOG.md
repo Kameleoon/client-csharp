@@ -3,12 +3,12 @@ All notable changes to this project will be documented in this file.
 
 ## 3.1.0 - 2023-04-18
 * Added a new methods:
-    - [`ActivateFeature`] -> [`IsFeatureActive`](https://developers.kameleoon.com/csharp-sdk.html#isfeatureactive)
+    - `ActivateFeature` -> [`IsFeatureActive`](https://developers.kameleoon.com/csharp-sdk.html#isfeatureactive)
     - [`GetEngineTrackingCode`](https://developers.kameleoon.com/csharp-sdk.html#getenginetrackingcode) which can be used to simplify utilization of hybrid mode
 * Renaming of methods:
-    - [`GetExperimentListForVisitorCode`] -> [`GetExperimentListForVisitor`](https://developers.kameleoon.com/csharp-sdk.html#GetExperimentListForVisitor)
-    - [`GetFeatureListForVisitorCode`] -> [`GetActiveFeatureListForVisitor`](https://developers.kameleoon.com/csharp-sdk.html#GetActiveFeatureListForVisitor)
-    - [`RetrieveDataFromRemoteSource`] -> [`GetRemoteData`](https://developers.kameleoon.com/csharp-sdk.html#GetRemoteData)
+    - `GetExperimentListForVisitorCode` -> [`GetExperimentListForVisitor`](https://developers.kameleoon.com/csharp-sdk.html#GetExperimentListForVisitor)
+    - `GetFeatureListForVisitorCode` -> [`GetActiveFeatureListForVisitor`](https://developers.kameleoon.com/csharp-sdk.html#GetActiveFeatureListForVisitor)
+    - `RetrieveDataFromRemoteSource` -> [`GetRemoteData`](https://developers.kameleoon.com/csharp-sdk.html#GetRemoteData)
 * Fixed an issue that could possibly affect incorrect targeting for methods:
     - [`GetFeatureVariationKey`](https://developers.kameleoon.com/csharp-sdk.html#GetFeatureVariationKey)
     - [`GetFeatureVariable`](https://developers.kameleoon.com/csharp-sdk.html#GetFeatureVariable)
