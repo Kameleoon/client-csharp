@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 3.1.1 - 2023-05-22
+* Fixed ASP.NET (MVC) compatibility issue
+
 ## 3.1.0 - 2023-04-18
 * Added a new methods:
     - `ActivateFeature` -> [`IsFeatureActive`](https://developers.kameleoon.com/csharp-sdk.html#isfeatureactive)
