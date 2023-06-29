@@ -1,6 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 3.3.0 - 2023-06-29
+* Added method to fetch remote visitor's data (with an optional capability to add data for a visitor):
+    - [`GetRemoteVisitorData`](https://developers.kameleoon.com/csharp-sdk.html#getremotevisitordata)
+* Added new conditions for targeting:
+    - `Visitor Code`
+    - `SDK Language`
+    - [`Page Title & Page Url`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#pageview)
+    - [`Browser`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#browser)
+    - [`Device`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#device)
+    - [`Conversion`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#trackconversion)
+
 ## 3.2.0 - 2023-06-06
 * Added `KameleoonException.InvalidConfigurationData` and `KameleoonException.EmptySiteCode` exceptions
 * Added `KameleoonClientFactory.ForgetClient` static method (`KameleoonClientFactory.Forget` is marked as deprecated)
