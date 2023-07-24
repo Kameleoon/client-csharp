@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 3.3.1 - 2023-07-24
+* Stability and performance improvements.
+
 ## 3.3.0 - 2023-06-29
 * Added method to fetch remote visitor's data (with an optional capability to add data for a visitor):
     - [`GetRemoteVisitorData`](https://developers.kameleoon.com/csharp-sdk.html#getremotevisitordata)
