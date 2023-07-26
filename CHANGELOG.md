@@ -34,6 +34,7 @@ All notable changes to this project will be documented in this file.
 * Fixed an issue that could possibly affect incorrect targeting for methods:
     - [`GetFeatureVariationKey`](https://developers.kameleoon.com/csharp-sdk.html#GetFeatureVariationKey)
     - [`GetFeatureVariable`](https://developers.kameleoon.com/csharp-sdk.html#GetFeatureVariable)
+* Added possibility for [`CustomData`](https://developers.kameleoon.com/csharp-sdk.html#customdata) to use variable argument list of values
 
 ## 3.0.0 - 2022-12-09
 * Added support of new feature flag rules:
