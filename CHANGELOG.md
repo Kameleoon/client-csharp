@@ -1,6 +1,57 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.0.0 - 2023-11-03
+### Breaking changes
+* Removed all methods and exceptions related to **experiments**:
+    - `TriggerExperiment`
+    - `GetVariationAssociatedData` (`ObtainVariationAssociatedData`)
+    - `ObtainFeatureVariable`
+    - `ObtainFeatureAllVariables`
+    - `GetExperimentList` (`ObtainExperimentList`)
+    - `GetExperimentListForVisitor` (`ObtainExperimentListForVisitorCode`)
+    - `ExperimentConfigurationNotFound`
+    - `NotTargeted`
+    - `NotAllocated`
+    - `SiteCodeDisabled`
+* Removed methods that were deprecated in 3.x versions:
+    - `ActivateFeature`
+    - `ObtainFeatureList`
+    - `ObtainFeatureListForVisitorCode`
+    - `ObtainFeatureVariable`
+    - `ObtainGetVisitorCode`
+    - `RetrieveDataFromRemoteSource`
+* Renamed classes, methods and exceptions:
+    - `GetFeatureAllVariables` to [`GetFeatureVariationVariables`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getfeaturevariationvariables)
+    - `ForgetClient` to `Forget`
+    - `FeatureConfigurationNotFound` to `FeatureNotFound`
+    - `VariationConfigurationNotFound` to `FeatureVariationNotFound`
+    - `VariableConfigurationNotFound` to `FeatureVariableNotFound`
+    - `CredentialsNotFound` to `ConfigCredentialsInvalid`
+    - `EmptySiteCode` to `SiteCodeIsEmpty`
+    - `VisitorCodeNotValid` to `VisitorCodeInvalid`
+* Changes in the [configuration](https://developers.kameleoon.com/csharp-sdk.html#additional-configuration) file:
+    - removed `visitor_data_maximum_size`
+    - renamed `actions_configuration_refresh_interval` to `refresh_interval_minute`
+    - renamed `default_timeout` to `default_timeout_millisecond`
+* Added new exception [`FeatureEnvironmentDisabled`] indicating that the feature flag is disabled for certain environments. The following methods can throw the new exception:
+    - [`GetFeatureVariationKey`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getfeaturevariationkey)
+    - [`GetFeatureVariable`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getfeaturevariable)
+    - [`GetFeatureVariationVariables`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getfeaturevariationvariables)
+* Changed the field `value` of the (`UserAgent`)[https://developers.kameleoon.com/csharp-sdk.html#useragent] data type to the property `Value`.
+* Removed parameter `topLevelDomain` from [`GetVisitorCode`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getvisitorcode). Instead, use the `top_level_domain` parameter in the [configuration](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#additional-configuration)
+* Removed parameters `clientId` and `clientSecret` from [`KameleoonClientFactory.Create`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#create)
+
+### Features
+* Added [`SetLegalConsent`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#setlegalconsent) method to determine the types data Kameleoon includes in tracking requests. This helps you adhere to legal and regulatory requirements while responsibly managing visitor data. You can find more information in the [Consent management policy](https://help.kameleoon.com/consent-management-policy/).
+* Added **KameleoonClientConfig**, which can be used as parameter during initialization of a client. Related to [`KameleoonClientFactory.Create`](https://developers.kameleoon.com/java-sdk.html#com-kameleoon-kameleoonclientfactory)
+* Added new configuration fields to external [configuration](https://developers.kameleoon.com/csharp-sdk.html#additional-configuration) file:
+    - `top_level_domain` which is used to set the domain name
+    - `session_duration_minute` that designates the predefined time interval that Kameleoon stores the visitor and their associated data in memory.
+
+### Bug fixes
+* Stability and performance improvements.
+
 ## 3.3.2 - 2023-07-26
 * Stability and performance improvements.
 
