@@ -27,7 +27,7 @@ All notable changes to this project will be documented in this file.
     - `ObtainFeatureList`
     - `ObtainFeatureListForVisitorCode`
     - `ObtainFeatureVariable`
-    - `ObtainGetVisitorCode`
+    - `ObtainVisitorCode`
     - `RetrieveDataFromRemoteSource`
 * Renamed classes, methods and exceptions:
     - `GetFeatureAllVariables` to [`GetFeatureVariationVariables`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getfeaturevariationvariables)
