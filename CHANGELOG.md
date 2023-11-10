@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.1.1 - 2023-11-10
+### Bug fixes
+* Resolved an issue where the [`WaitInit`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#waitinit) method could crash during initialization.
+
 ## 4.1.0 - 2023-11-03
 ### Features
 * Added [`WaitInit`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#waitinit) method, which allows you to check if the client has been successfully initialized before proceeding with other operations.
