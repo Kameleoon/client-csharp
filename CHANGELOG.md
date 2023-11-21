@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.1.2 - 2023-11-21
+### Bug fixes
+* Stability and performance improvements.
+
 ## 4.1.1 - 2023-11-10
 ### Bug fixes
 * Resolved an issue where the [`WaitInit`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#waitinit) method could crash during initialization.
