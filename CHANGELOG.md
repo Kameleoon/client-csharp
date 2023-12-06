@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.1.3 - 2023-12-06
+### Bug fixes
+* A compatibility issue that prevented the C# SDK from working as intended with the .NET Framework has been fixed. The SDK now ensures compatibility with the .NET framework. The minimum supported .NET Framework version is now [4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462).
+
 ## 4.1.2 - 2023-11-21
 ### Bug fixes
 * Stability and performance improvements.
