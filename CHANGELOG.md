@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.2.0 - 2023-12-19
+### Features
+* Added [`GetActiveFeatures`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getactivefeatures) method. It retrieves information about the active feature flags that are available for a specific visitor code. This method replaces the deprecated [`GetActiveFeatureListForVisitor`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getactivefeaturelistforvisitor) method.
+### Bug fixes
+* Updated vulnerable dependencies `System.Text.Encodings.Web`, `System.Text.RegularExpressions`, `Newtonsoft.Json`.
+
 ## 4.1.3 - 2023-12-06
 ### Bug fixes
 * A compatibility issue that prevented the C# SDK from working as intended with the .NET Framework has been fixed. The SDK now ensures compatibility with the .NET framework. The minimum supported .NET Framework version is now [4.6.1](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net461).
