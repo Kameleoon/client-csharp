@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.2.1 - 2023-12-21
+### Features
+* Added new fields to `Variation` in [`GetActiveFeatures`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getactivefeatures) method:
+    - `Id`
+    - `ExperimentId`
+
 ## 4.2.0 - 2023-12-19
 ### Features
 * Added [`GetActiveFeatures`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getactivefeatures) method. It retrieves information about the active feature flags that are available for a specific visitor code. This method replaces the deprecated [`GetActiveFeatureListForVisitor`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getactivefeaturelistforvisitor) method.
