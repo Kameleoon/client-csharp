@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.2.2 - 2024-01-26
+### Bug fixes
+* Resolved an issue where the [`getActiveFeatures`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getactivefeatures) could throw `NullReferenceException` in certain cases if your project configuration is empty.
+
+
 ## 4.2.1 - 2023-12-21
 ### Features
 * Added new fields to `Variation` in [`GetActiveFeatures`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getactivefeatures) method:
