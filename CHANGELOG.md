@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.2.3 - 2024-02-12
+### Bug fixes
+* Fixed issue when improper `Expires` cookie field value of visitor code cookie on .NET Framework.
+
 ## 4.2.2 - 2024-01-26
 ### Bug fixes
 * Resolved an issue where the [`getActiveFeatures`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getactivefeatures) could throw `NullReferenceException` in certain cases if your project configuration is empty.
