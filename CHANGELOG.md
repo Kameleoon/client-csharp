@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 ## 4.3.0 - 2024-02-16
 ### Features
 * Added support for additional Data API servers across the world for even faster network requests.
-* Increased limit for requests to Data API: https://developers.kameleoon.com/apis/data-api-rest/overview/#rate-limits
+* Increased limit for requests to Data API: [rate limits](https://developers.kameleoon.com/apis/data-api-rest/overview/#rate-limits)
 * Added [`GetVisitorWarehouseAudience`](https://developers.kameleoon.com/csharp-sdk.html#getvisitorwarehouseaudience) method to retrieve all data associated with a visitor's warehouse audiences and adds it to the visitor.
 ### Bug fixes
 * Stability and performance improvements.
@@ -15,7 +15,7 @@ All notable changes to this project will be documented in this file.
 
 ## 4.2.2 - 2024-01-26
 ### Bug fixes
-* Resolved an issue where the [`getActiveFeatures`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getactivefeatures) could throw `NullReferenceException` in certain cases if your project configuration is empty.
+* Resolved an issue where the [`GetActiveFeatures`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getactivefeatures) could throw `NullReferenceException` in certain cases if your project configuration is empty.
 
 
 ## 4.2.1 - 2023-12-21
