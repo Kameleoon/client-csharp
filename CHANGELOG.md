@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.3.0 - 2024-02-16
+### Features
+* Added support for additional Data API servers across the world for even faster network requests.
+* Increased limit for requests to Data API: https://developers.kameleoon.com/apis/data-api-rest/overview/#rate-limits
+* Added [`GetVisitorWarehouseAudience`](https://developers.kameleoon.com/csharp-sdk.html#getvisitorwarehouseaudience) method to retrieve all data associated with a visitor's warehouse audiences and adds it to the visitor.
+### Bug fixes
+* Stability and performance improvements.
+
 ## 4.2.3 - 2024-02-12
 ### Bug fixes
 * Fixed issue when improper `Expires` cookie field value of visitor code cookie on .NET Framework.
