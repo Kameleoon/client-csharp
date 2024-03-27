@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 * Added a new optional parameter `isUniqueIdentifier` that provides additional capabilities with [cross-device experimentation](https://developers.kameleoon.com/core-concepts/cross-device-experimentation) in the following methods:
     - [`Flush`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#flush)
     - [`TrackConversion`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#trackconversion)
-    - [`GetFeatureVariationKey`]https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getfeaturevariationkey
+    - [`GetFeatureVariationKey`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getfeaturevariationkey)
     - [`GetFeatureVariable`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getfeaturevariable)
     - [`IsFeatureActive`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#isfeatureactive)
     - [`GetRemoteVisitorData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getremotevisitordata)
