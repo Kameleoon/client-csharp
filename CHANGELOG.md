@@ -1,6 +1,34 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.4.0 - 2024-03-27
+### Features
+* Added a new optional parameter `isUniqueIdentifier` that provides additional capabilities with [cross-device experimentation](https://developers.kameleoon.com/core-concepts/cross-device-experimentation) in the following methods:
+    - [`Flush`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#flush)
+    - [`TrackConversion`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#trackconversion)
+    - [`GetFeatureVariationKey`]https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getfeaturevariationkey
+    - [`GetFeatureVariable`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getfeaturevariable)
+    - [`IsFeatureActive`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#isfeatureactive)
+    - [`GetRemoteVisitorData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getremotevisitordata)
+* New [targeting conditions](https://developers.kameleoon.com/feature-management-and-experimentation/using-visit-history-in-feature-flags-and-experiments) are now available (some of them may require pre-loading the data using [`GetRemoteVisitorData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getremotevisitordata)):
+    - Browser Cookie
+    - Operating System
+    - IP Geolocation
+    - Kameleoon Segment
+    - Target Feature Flag
+    - Previous Page
+    - Number of Page Views
+    - Time since First Visit
+    - Time since Last Visit
+    - Number of Visits Today
+    - Total Number of Visits
+    - New or Returning Visitor
+* Introduced new Kameleoon Data types:
+    - [`Cookie`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#cookie)
+    - [`OperatingSystem`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#operatingsystem)
+    - [`Geolocation`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#geolocation)
+* Changed the parameter `title` in data object [`PageView`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#pageview) to optional.
+
 ## 4.3.0 - 2024-02-16
 ### Features
 * Added support for additional Data API servers across the world for even faster network requests.
