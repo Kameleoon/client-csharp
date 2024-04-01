@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.4.1 - 2024-04-01
+### Bug fixes
+* Stability and performance improvements.
+
+
 ## 4.4.0 - 2024-03-27
 ### Features
 * Added a new optional parameter `isUniqueIdentifier` that provides additional capabilities with [cross-device experimentation](https://developers.kameleoon.com/core-concepts/cross-device-experimentation) in the following methods:
