@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.4.2 - 2024-04-25
+### Bug fixes
+* Disabled logging of failed requests to [Data API](https://developers.kameleoon.com/apis/data-api-rest/all-endpoints/post-visit-events/) flagged due to the user agent being identified as a bot (status code equals 403)
+
 ## 4.4.1 - 2024-04-01
 ### Bug fixes
 * Stability and performance improvements.
