@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.4.4 - 2024-05-02
+### Bug fixes
+* The number of [MaxConnectionsPerServer](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclienthandler.maxconnectionsperserver?view=netstandard-2.0) for [HttpClientHandler](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclienthandler?view=netstandard-2.0) is limited to 20.
+
 ## 4.4.3 - 2024-04-27
 ### Bug fixes
 * Fixed a problem that occurred when passing an incorrect [User-Agent](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#useragent) value.
