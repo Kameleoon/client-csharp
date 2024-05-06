@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.4.5 - 2024-05-06
+### Bug fixes
+* Stability and performance improvements.
+
 ## 4.4.4 - 2024-05-02
 ### Bug fixes
 * The number of concurrent connections per server that you can specify with [MaxConnectionsPerServer](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclienthandler.maxconnectionsperserver?view=netstandard-2.0) for [HttpClientHandler](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclienthandler?view=netstandard-2.0) is now limited to a maximum value of 20.
