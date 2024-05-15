@@ -15,7 +15,7 @@ All notable changes to this project will be documented in this file.
 
 ## 4.4.2 - 2024-04-25
 ### Bug fixes
-* Added a privacy manifest file in accordance with the new [Apple privacy policy](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files).
+* Disabled logging of failed requests to [Data API](https://developers.kameleoon.com/apis/data-api-rest/all-endpoints/post-visit-events/) flagged due to the user agent being identified as a bot (status code equals 403)
 
 ## 4.4.1 - 2024-04-01
 ### Bug fixes
