@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.4.6 - 2024-05-22
+### Bug fixes
+* Resolved an issue where the "Kameleoon Segment" condition could occasionally return incorrect targeting results.
+
 ## 4.4.5 - 2024-05-06
 ### Bug fixes
 * Stability and performance improvements.
