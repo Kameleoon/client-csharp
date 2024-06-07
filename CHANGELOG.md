@@ -3,9 +3,9 @@ All notable changes to this project will be documented in this file.
 
 ## 4.5.0 - 2024-06-07
 ### Features
-* New targeting condition [Likelihood to convert](https://developers.kameleoon.com/feature-management-and-experimentation/using-visit-history-in-feature-flags-and-experiments) is now available. It’s required pre-loading the data using [`GetRemoteVisitorData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getremotevisitordata) with `kcs` parameter equals `true`.
+The [Likelihood to convert](https://developers.kameleoon.com/feature-management-and-experimentation/using-visit-history-in-feature-flags-and-experiments) targeting condition is now available. Pre-loading the data is required using [`GetRemoteVisitorData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getremotevisitordata) with the `kcs` parameter set to `true`.
 ### Bug fixes
-* Disabling [User-Agent](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#useragent) verification during addition.
+* When using the [`addData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#adddata) method, [`UserAgent`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#useragent) verification is no longer performed.
 
 ## 4.4.6 - 2024-05-22
 ### Bug fixes
