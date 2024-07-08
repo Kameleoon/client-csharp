@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.5.1 - 2024-07-08
+### Bug fixes
+* Resolved an issue on the [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework) platform that could generate duplicate visitor codes and tracking calls with a nonce number.
+
 ## 4.5.0 - 2024-06-07
 ### Features
 The [Likelihood to convert](https://developers.kameleoon.com/feature-management-and-experimentation/using-visit-history-in-feature-flags-and-experiments) targeting condition is now available. Pre-loading the data is required using [`GetRemoteVisitorData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getremotevisitordata) with the `kcs` parameter set to `true`.
