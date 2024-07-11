@@ -1,6 +1,29 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.6.0 - 2024-07-11
+### Features
+* Enhanced [logging](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#logging):
+    - Introduced [log levels](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#log-levels):
+        - `None`
+        - `Error`
+        - `Warning`
+        - `Info`
+        - `Debug`
+    - Added support for [custom logger](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#custom-handling-of-logs) implementations.
+* Improved the tracking mechanism to consolidate multiple visitors into a single request. The new approach combines information on all affected visitors into one request, which is sent once per interval.
+* Added a new variation of the [`Flush(bool instant, string visitorCode)`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#flush) with `instant` parameter. If the parameter's value is `true` the visitor's data is tracked instantly. Otherwise, the visitor's data will be tracked with next tracking interval. Default value of the parameter is `false`.
+* Added new configuration parameter `trackingIntervalMilliseconds` (`tracking_interval_millisecond`) to [`KameleoonClientConfig`](https://developers.kameleoon.com/csharp-sdk.html#additional-configuration) and the [configuration](https://developers.kameleoon.com/csharp-sdk.html#additional-configuration) file, which is used to set interval for tracking requests. Default value is `1000` milliseconds.
+* New Kameleoon Data type [`UniqueIdentifier`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#uniqueidentifier) is introduced. It will be used in all methods instead of `isUniqueIdentifier` parameter. All methods with `isUniqueIdentifier` parameter are marked as deprecated:
+    - [`Flush`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#flush)
+    - [`TrackConversion`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#trackconversion)
+    - [`GetFeatureVariationKey`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getfeaturevariationkey)
+    - [`GetFeatureVariable`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getfeaturevariable)
+    - [`IsFeatureActive`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#isfeatureactive)
+    - [`GetRemoteVisitorData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getremotevisitordata)
+### Bug fixes
+* Resolved an issue where the [`Flush(null, isUniqueIdentifier)`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#flush) method was incorrectly sending requests with `isUniqueIdentifier` applied to each visitor. Now, `isUniqueIdentifier` is only considered if `visitorCode` is provided and not null.
+
 ## 4.5.1 - 2024-07-08
 ### Bug fixes
 * Resolved an issue on the [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework) platform that could generate duplicate visitor codes and tracking calls with a nonce number.
