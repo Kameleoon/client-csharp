@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.6.1 - 2024-08-02
+### Bug fixes
+* Resolved an issue where the SDK could become stuck during prolonged Data API outages.
+
 ## 4.6.0 - 2024-07-11
 ### Features
 * Enhanced [logging](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#logging):
