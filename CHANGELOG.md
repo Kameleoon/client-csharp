@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.6.2 - 2024-08-13
+### Bug fixes
+* Fixed an issue that caused duplicate entries in feature flag results for both anonymous and authorized/identified visitors during data reconciliation. This problem occurred when custom data of type mapping ID was not consistently sent for all sessions.
+
 ## 4.6.1 - 2024-08-02
 ### Bug fixes
 * Resolved an issue where the SDK could become stuck during prolonged Data API outages.
