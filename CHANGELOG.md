@@ -1,6 +1,20 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.7.0 - 2024-10-04
+### Features
+* Introduced new evaluation methods for clarity and improved efficiency when working with the SDK:
+  - [`GetVariation`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getvariation)
+  - [`GetVariations`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getvariations)
+* These methods replace the deprecated ones:
+  - [`GetFeatureVariationKey`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getfeaturevariationkey)
+  - [`GetFeatureVariable`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getfeaturevariable)
+  - [`GetActiveFeatures`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getactivefeatures)
+  - [`GetFeatureVariationVariables`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getfeaturevariationvariables)
+* A new version of the [`IsFeatureActive`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#isfeatureactive) method now includes an optional `track` parameter, which controls whether the assigned variation is tracked (default: `true`).
+* Enhanced top-level domain validation within the SDK. The implementation now includes automatic trimming of extraneous symbols and provides a [warning](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#log-levels) when an invalid domain is detected.
+* Enhanced the [`GetEngineTrackingCode`](https://developers.kameleoon.com/csharp-sdk.html#getenginetrackingcode) method to properly handle `JS` and `CSS` variables.
+
 ## 4.6.2 - 2024-08-13
 ### Bug fixes
 * Fixed an issue that caused duplicate entries in feature flag results for both anonymous and authorized/identified visitors during data reconciliation. This problem occurred when custom data of type mapping ID was not consistently sent for all sessions.
