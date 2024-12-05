@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.9.0 - 2024-12-05
+### Features
+* Added support for **simulated** variations.
+* Added the [`SetForcedVariation()`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#setforcedvariation) method. This method allows explicitly setting a forced variation for a visitor, which will be applied during experiment evaluation.
+### Bug fixes
+* Fixed an issue where random visitor codes were not being generated correctly on the [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework).
+* Fixed an issue where the [`Variation.IsActive`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#variation) property returned an incorrect value.
+
 ## 4.8.1 - 2024-11-20
 ### Bug fixes
 * Resolved an issue where the validation of [top-level domains](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#additional-configuration) for `localhost` resulted in incorrect failures. The SDK now accepts the provided domain without modification if it is deemed invalid and logs an [error](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#log-levels) to notify you of any issues with the specified domain.
