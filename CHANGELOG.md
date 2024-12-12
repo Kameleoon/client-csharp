@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.9.1 - 2024-12-12
+### Bug fixes
+* Fixed an issue where simulated variations were not removed for a visitor during their session, causing them to persist until a new session started.
+
 ## 4.9.0 - 2024-12-05
 ### Features
 * Added support for **simulated** variations.
