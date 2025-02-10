@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.10.0 - 2025-02-10
+### Features
+* Added SDK support for **holdout experiments**. Visitors assigned to a holdout experiment are excluded from all other rollouts and experiments, and consistently receive the default variation. For visitors not in a holdout experiment, the standard evaluation process applies, allowing them to be evaluated for all feature flags as usual. Platform-wide release expected in February 2025.
+### Bug fixes
+* Stability and performance improvements.
+
 ## 4.9.1 - 2024-12-12
 ### Bug fixes
 * Fixed an issue where simulated variations were not removed for a visitor during their session, causing them to persist until a new session started.
