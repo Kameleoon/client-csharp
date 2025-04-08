@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.13.1 - 2025-04-08
+### Bug fixes
+* Changed the order in which **conversion** and **experiment** events are sent. This may lead to more accurate **visit**-level experiment reporting.
+
 ## 4.13.0 - 2025-03-24
 ### Features
 * Added new optional parameters `negative` and `metadata` to the [`TrackConversion`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#trackconversion) method.
