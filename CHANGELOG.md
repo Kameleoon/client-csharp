@@ -5,6 +5,9 @@ All notable changes to this project will be documented in this file.
 ### Features
 * Added an `overwrite` flag to [`CustomData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#customdata), used as the `overwrite` parameter during tracking.
 * [`CustomData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#customdata) can now be created using a `name`, in addition to the existing method of using an `index`.
+### Bug fixes
+* Renamed the `id` parameter to `index` for [`CustomData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#customdata). The previous name `id` could be mistakenly understood as a unique `CustomData` identifier, whereas the SDK actually requires an `index`.
+
 ## 4.16.0 - 2025-07-23
 ### Features
 * Added the [`EvaluateAudiences`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#evaluateaudiences) method. This method iterates over all Audiences Explorer segments, evaluates each one, and tracks the segments for which the visitor is targeted using the [`TARGETINGSEGMENT`](https://developers.kameleoon.com/apis/data-api-rest/all-endpoints/post-visit-events/) event.
