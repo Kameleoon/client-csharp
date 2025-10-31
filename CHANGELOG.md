@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.17.1 - 2025-10-31
+### Bug fixes
+* Fixed an issue where [`Conversion`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#conversion)'s metadata initialized with a name was not tracked.
+
 ## 4.17.0 - 2025-08-29
 ### Features
 * Added an `overwrite` flag to [`CustomData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#customdata), used as the `overwrite` parameter during tracking.
