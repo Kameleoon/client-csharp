@@ -1,6 +1,20 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.20.0 - 2026-04-01
+### Features
+* Introduced a new [`GetDataFile`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getdatafile) method. This method returns the current SDK configuration (also known as the **data file**) used for evaluation and targeting. It is **not** intended for production use to fetch variations for every feature flag in the returned list, as it is not optimized for performance. For that purpose, use [`GetVariations`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getvariations) instead. `GetDataFile` is mainly useful for debugging or QA, for example to let internal users manually select a variant for a specific feature flag in production.
+* Added support for variation simulation when feature flags are **inactive (OFF state)** across the following methods:
+  - [`getVariation`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getvariation)
+  - [`getVariations`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getvariations)
+  - [`isFeatureActive`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#isfeatureactive)
+  - This support is also extended to the following **deprecated methods**:
+    - [`getActiveFeatureListForVisitorCode`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getactivefeaturelistforvisitorcode)
+    - [`getActiveFeatures`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getactivefeatures)
+    - [`getFeatureVariationKey`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getfeaturevariationkey)
+    - [`getFeatureVariable`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getfeaturevariable)
+    - [`getFeatureVariables`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getfeaturevariables)
+
 ## 4.19.0 - 2026-02-13
 ### Features
 * Updated the allowed range for the [`trackingIntervalMilliseconds`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#additional-configuration). The new range is from **`1000` ms** (default) to **`5000` ms**, allowing a reduction in the number of tracking requests.
