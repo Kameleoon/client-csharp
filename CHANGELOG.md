@@ -9,7 +9,7 @@ All notable changes to this project will be documented in this file.
   - [`getVariations`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getvariations)
   - [`isFeatureActive`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#isfeatureactive)
   - This support is also extended to the following **deprecated methods**:
-    - [`getActiveFeatureListForVisitorCode`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getactivefeaturelistforvisitorcode)
+    - [`getActiveFeatureListForVisitor`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getactivefeaturelistforvisitor)
     - [`getActiveFeatures`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getactivefeatures)
     - [`getFeatureVariationKey`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getfeaturevariationkey)
     - [`getFeatureVariable`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk/#getfeaturevariable)
