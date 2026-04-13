@@ -4,4 +4,4 @@ Our SDK gives you the possibility of running experiments and activating feature 
 
 ## Learn more
 
-You can refer to the [SDK reference](https://developers.kameleoon.com/csharp-sdk.html#reference) to check out all possible features of the SDK. Also make sure you check out our [Getting started tutorial](https://developers.kameleoon.com/csharp-sdk.html#getting-started) which we have prepared to walk you through the installation and implementation.
+You can refer to the [SDK reference](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#reference) to check out all possible features of the SDK. Also make sure you check out our [Getting started tutorial](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/csharp-sdk#getting-started) which we have prepared to walk you through the installation and implementation.
